@@ -5,6 +5,9 @@
 				<el-input v-model="state.queryForm.username" placeholder="用户名" clearable></el-input>
 			</el-form-item>
 			<el-form-item>
+				<el-input v-model="state.queryForm.realName" placeholder="姓名" clearable></el-input>
+			</el-form-item>
+			<el-form-item>
 				<el-input v-model="state.queryForm.mobile" placeholder="手机号" clearable></el-input>
 			</el-form-item>
 			<el-form-item>
@@ -75,6 +78,7 @@ const state: IHooksOptions = reactive({
 	deleteUrl: '/sys/user',
 	queryForm: {
 		username: '',
+		realName: '',
 		mobile: '',
 		gender: ''
 	}
